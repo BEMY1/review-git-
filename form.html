@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+     <!-- แสดงสีให้ดูว่า form นั้นเป็นแบบ block => กินพื้นที่เต็มบรรทัด  -->
+    <style>
+        form{
+            border: 2px solid blue;
+        }
+        input{
+            border: 2px solid gold; /*input เป็น inline*/ 
+        }
+    </style>
+
+</head>
+<body align="center" >
+    <h1>Register Form</h1>
+    <form>
+        <div>
+            <!-- type text -->
+            <label for="Fullname">Name</label><br>
+            <input type="text" name="fname" placeholder="Your name" required> <!-- ระบุ required เพื่อบังคับให้กรอก ก่อนที่จะส่งข้อมูล-->
+        </div>
+        <div>
+            <label for="lname">Lastname</label><br>
+            <input type="text" name="lname" placeholder="Your Lastname" required>
+        </div>
+        <div>
+            <!-- type email -->
+            <label for="email">Email</label><br>
+            <input type="email" name="อีเมล" placeholder="example@gmail.com" readonly><!--ระบุ readonly เพื่อให้อ่านอย่างเดียว ไม่สามารถกรอกข้อมูลได้-->
+        </div>
+        <div>
+            <!-- type password -->
+            <label for="password">Password</label><br>
+            <input type="password" name="รหัสผ่าน" placeholder="password">
+        </div>
+        <div>
+            <label for="confirm_password">Confirm_Password</label><br>
+            <input type="password" name="ยืนยันรหัสผ่าน" placeholder="password">
+        </div>
+        <div>
+            <!-- textarea -->
+            <label for="address">Address</label><br>
+            <textarea name="ที่อยู่" rows="2" cols="25" placeholder="Your address" readonly>Bangkok</textarea> <!--ระบุเริ่มต้นเป็น Bangkok และไม่สามารถเปลี่ยนได้ เพราะระบุ readonly ไว้-->
+        </div>
+        <div>
+            <!-- type tel -->
+            <label for="phone_number">Tel.</label>
+            <input type="tel" placeholder="0xxxxxxxxx">
+        </div>
+        <div>
+            <!-- type number -->
+            <label for="age">Age</label>
+            <input type="number" value="0" max="99"  min="0" placeholder="0-99">
+        </div>
+        <div>
+            <!-- type color -->
+            <label for="color">Favorite Color</label>
+            <input type="color" >
+        </div>
+        <div>
+            <!-- type range -->
+            <label for="range">Range</label>
+            <input type="range" value="1">
+        </div>
+        
+            <!-- select หลายตัวเลือก -->
+            <label for="checkbox">งานดิเรก</label> <br>
+            <input type="checkbox" name="fav">อ่านหนังสือ<br> 
+            <input type="checkbox" name="fav">เล่นกีฬา<br>
+            <input type="checkbox" name="fav">เล่นดนตรี<br>
+            <input type="checkbox" name="fav">วาดรูป<br>
+            <br><br>
+
+            <!-- select ตัวเลือกเดียว -->
+        
+                <!-- เหมาะกับ "มีตัวเลือกไม่เยอะ"  -->
+                    <!-- มีการระบุ name เหมือนกัน เพื่อให้อยู่กลุ่มเดียวกัน => ไม่สามารถเลือกหลายตัวเลือกได้ -->
+            <label for="gender">เพศ</label>
+            <input type="radio" name="gen">Male
+            <input type="radio" name="gen">Female
+            <input type="radio" name="gen">อื่นๆ
+            <br><br>
+
+                <!-- เหมาะกับ "มีตัวเลือกเยอะ"  -->
+            <label for="ระดับการศึกษา">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="มัธยม">มัธยมปลาย</option>
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาโท">ปริญญาโท</option>
+            </select><br><br>
+
+            <!-- Input File -->
+            <label for="getFile">File</label>    
+            <input type="file">
+            <br><br>
+
+            <label for="getURL">url</label>
+            <input type="url">
+            <br><br>
+            
+            <div>
+                <input type="submit" value="ส่งข้อมูล">
+                <button type="SUBMIT">บันทึกข้อมูล</button>
+                <input type="reset" value="ล้างข้อมูล">
+               <button type="reset">reset</button> 
+            </div>
+        <br><br><hr>
+
+
+        <a href="index.html">Back To Home</a> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+list
+ol ul 
+
+ตาราง
+table thead tbody  tr th td
+
+width
+cellpadding
+cellspacing
+border
+bgcolor
+
+colspan
+rawspan
+
+https://www.google.com/
+
+
+<input>
+name 
+lastname 
+gmail
+password
+address
+age
+birthday
+favorite color
+range
+
+<select>
+-->หลายตัวเลือก 
+--> ตัวเลือกเดียว
+choice 1.เหมาะกับน้อยๆ 2.เหมาะกับมากๆ
+file
+url

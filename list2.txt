@@ -1,0 +1,83 @@
+Normal mode = เลื่อน
+Insert mode = แก้ไข
+Visual mode  = คุมดำ
+
+
+
+
+Normal & Insert mode
+
+a i c = เข้า  insert mode 
+
+esc i v = select mode 
+
+(amount)hjkl = move cursor
+
+(amount)w b e = move between word
+
+gg G = go to top and low file 
+
+
+^ 0 = go to front in this line 
+
+$ = go to end in this line 
+
+a = write at right side of cursor (in normal mode)
+
+shift + a = write at the end of this line. 
+
+(amount)x = delete
+
+u = ctrl + z = undo 
+
+ctrl + r = redo 
+
+*****de = ลบจนถึงตัวสุดท้ายของคำ (ไม่รวมเว้นวรรค)
+*****dw = ลบจนถึงตัวสุดท้ายของคำ โดยรวมเว้นวรรคด้านหลังไปด้วย
+dd = delete this line (all in this line)
+*****shift + d = delete the alphabet that you are until the last alphabet in that
+line.
+*****shift + c = คล้าย D แต่ C พร้อมแก้ไข
+
+*****cc = อยากแก้ไขทั้งบรรทัด (ลบและเริ่มในจุดที่พร้อมแก้ไข)
+*****diw = ลบทั้งคำที่ cursor วางอยู่
+*****ciw = ลบทั้งคำที่ cursor วางอยู่ พร้อมเตรียมแก้ไข
+
+*****di + สิ่งที่อยากให้ลบภายในมัน เช่น  di( ลบข้อความภายในวงเล็บ, di[ ลบข้อความภายในก้ามปู
+
+o = ขึ้นบรรทัดใหม่ด้านล่าง
+shift + o = ขึ้นบรรทัดใหม่ด้านบน
+
+*****/ + คำที่จะค้นหา = ค้นหาคำ 
+	|
+	--> กด n เพื่อขยับไปคำถัดไป / กด shift + n = ถอยหลัง
+
+f + ตัวอักษรที่ต้องการกระโดดไป = เช่น f + t = กระโดดไปหาตัว t ด้านขวามือ
+F + ตัวอักษรที่ต้องการกระโดดไป = เช่น F + t = กระโดดไปหาตัว t ด้านซ้าย
+
+t = คล้ายๆกับ f ต่างกันที่ f --> cursor จะไปถึงตัว target เลย แต่ t -->  cursor จะถึงตัวก่อนหน้า target
+
+
+
+Visual mode
+
+shift + v = คุมดำทั้งบรรทัด
+*****viw = คลุมทั้งคำ
+V + c หรือ s = คุมดำทั้บรรทัด และแก้ไขบรรทัดนั้น
+
+y หลังคลุมดำ = ctrl + c ; copy
+*****(amount)p = ctrl + v ; paste ข้างขวา  cursor
+shift + p = วางข้างซ้าย cursor
+
+*****V + yy = copy ทั้งบรรทัด
+
+*****คลุมดำ + r + สิ่งที่อยากจะเปลี่ยนให้เป็น = เปลี่ยนสิ่งที่คลุมดำ เป็นสิ่งที่จะเปลี่ยนทั้งหมด
+
+ctrl + v = visual block == การคลุมเป็น block
+	|
+	--> กด s หลังจากคลุมดำหลายบรรทัด === การแก้ไขหลายบรรทัดที่เราคลุมดำไปพร้อมๆกัน
+
+r + ตำอักษร 1 ตัวที่ต้องการเปลี่ยนใน cursor
+
+gb = คลุมดำเป็นคำๆไป ถ้าอยากคลุมดำคำถัดไปเรื่อยๆ ให้พิมพ์ gb เรื่อย จากนั้นกด s หรือกด A เพื่อเริ่มการแก้ไข
+
